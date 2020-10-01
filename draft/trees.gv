@@ -1,0 +1,35 @@
+graph {
+    edge [minlen=2];
+
+    subgraph {
+        連震東 [URL="https://zh.wikipedia.org/wiki/%E9%80%A3%E9%9C%87%E6%9D%B1"];
+        連戰 [URL="https://zh.wikipedia.org/wiki/%E9%80%A3%E6%88%B0"];
+        連勝文 [URL="https://zh.wikipedia.org/wiki/%E9%80%A3%E5%8B%9D%E6%96%87"];
+
+        連震東 -- 連戰 [taillabel="父", headlabel="子"];
+        連戰 -- 連勝文 [taillabel="父", headlabel="子"];
+    }
+
+    subgraph {
+        傅崐萁 [URL="https://zh.wikipedia.org/wiki/%E5%82%85%E5%B4%90%E8%90%81"];
+        徐榛蔚 [URL="https://zh.wikipedia.org/wiki/%E5%BE%90%E6%A6%9B%E8%94%9A"];
+
+        傅崐萁 -- 徐榛蔚 [taillabel="夫", headlabel="妻"];
+    }
+
+    subgraph {
+        蘇嘉全 [URL="https://zh.wikipedia.org/wiki/%E8%98%87%E5%98%89%E5%85%A8"];
+        蘇震清 [URL="https://zh.wikipedia.org/wiki/%E8%98%87%E9%9C%87%E6%B8%85"];
+
+        蘇嘉全 -- 蘇震清 [taillabel="三叔", headlabel="姪子"];
+    }
+
+    subgraph {
+        吳伯雄 [URL="https://zh.wikipedia.org/wiki/%E5%90%B3%E4%BC%AF%E9%9B%84"];
+        吳志揚 [URL="https://zh.wikipedia.org/wiki/%E5%90%B3%E5%BF%97%E6%8F%9A_(%E6%94%BF%E6%B2%BB%E4%BA%BA%E7%89%A9)"];
+        吳志剛 [URL="https://zh.wikipedia.org/wiki/%E5%90%B3%E5%BF%97%E5%89%9B"];
+
+        吳伯雄 -- 吳志揚 [taillabel="父", headlabel="子"];
+        吳伯雄 -- 吳志剛 [taillabel="父", headlabel="子"];
+    }
+}
